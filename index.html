@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <div id="header" class="bg-[#d5d5d5] flex justify-between items-center py-4 px-5">
+    <div id="header" class="bg-[#d5d5d5] flex justify-between items-center py-4 px-5 fixed top-0 left-0 right-0 z-[1]">
         <div id="logo" class="flex justify-start basis-1/3">
 
             <div class="bg-[#333333] text-[#d5d5d5] font-bold text-3xl outline outline-2 outline-[#333333] flex items-center px-2">U.</div>
@@ -16,7 +16,7 @@
 
             <div class="ml-2 text-sm">UNIVERSIDADE<br>DO PORTO</div>
         </div>
-        <div id="nav" class="hidden lg:flex justify-between basis-2/3 [&>*]:text-sm">
+        <div id="nav" class="hidden lg:flex justify-between basis-2/3 [&>*]:font-extrabold ">
             <div>STUDY</div>
             <div>RESEARCH</div>
             <div>INNOVATE</div>
@@ -26,13 +26,13 @@
         </div>
         <img src="./img/menu.svg" alt="" class="lg:hidden">
     </div>
-    <div id="hero" class="relative bg-[url('./img/hero.jpg')] bg-cover bg-center h-[20rem]">
+    <div id="hero" class="relative bg-[url('./img/hero.jpg')] bg-cover bg-center h-[20rem] mt-18">
         <div class="absolute bottom-0 bg-[#333333] bg-opacity-[80%] w-[100%] h-32 px-3 pt-3 lg:top-[50%] lg:left-6 lg:w-auto lg:bg-opacity-[90%]">
            <p class=" text-white text-xl font-bold">Get to know the U.Porto Strategic Plan 2030!</p>
            <div class="inline-block bg-[#a18a4d] px-2 py-1 mt-2 font-bold text-[#333333]">See more</div> 
         </div>
     </div>
-    <div class="space-y-4 px-2 mt-10">
+    <div id="study" class="space-y-4 px-2 mt-10">
         <h1 class="text-[#a18a4d] font-serif text-3xl">Study</h1>
         <h2 class="font-bold text-2xl">Your future is here!</h2>
         <p class="font-serif text-sm">
@@ -43,7 +43,7 @@
             properly valued by the labour market.
         </p>
     </div>
-    <div class="px-2 mt-10 py-5">
+    <div id="search" class="px-2 mt-10 py-5">
         <form class="space-y-4">
             <div class="text-2xl font-bold">Which course are you looking for?</div>
             
@@ -60,6 +60,15 @@
                 Search
             </div>
         </form>
+        <!-- <div class="lg:hidden"><br><br><br></div> -->
+        <div class="pt-4">
+            <h1 class="text-3xl font-bold ">Courses from A to Z:</h1>
+            <ul class="[&>*]:underline [&>*]:text-2xl">
+                <li><a href="#" >Bachelor's and Integrated Master's Degrees</a></li>
+                <li><a href="#">Master's Degrees</a></li>
+                <li><a href="#">Doctorates</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
