@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div id="header" class="bg-[#d5d5d5] flex justify-between items-center py-4 px-5">
+        <div id="logo" class="flex justify-start basis-1/3">
+
+            <div class="bg-[#333333] text-[#d5d5d5] font-bold text-3xl outline outline-2 outline-[#333333] flex items-center px-2">U.</div>
+
+            <div class="hidden text-[#333333] outline outline-2 outline-[#333333] font-bold text-3xl lg:flex items-center px-2">PORTO</div>
+
+            <div class="ml-2 text-sm">UNIVERSIDADE<br>DO PORTO</div>
+        </div>
+        <div id="nav" class="hidden lg:flex justify-between basis-2/3 [&>*]:text-sm">
+            <div>STUDY</div>
+            <div>RESEARCH</div>
+            <div>INNOVATE</div>
+            <div>LIVE</div>
+            <div>EXPLORE</div>
+            <div class="hidden lg:block"><input type="search" placeholder="Search" class="bg-[#d5d5d5] border-b-black border-b-2 border-b"></div>
+        </div>
+        <img src="./img/menu.svg" alt="" class="lg:hidden">
+    </div>
+    <div id="hero" class="relative bg-[url('./img/hero.jpg')] bg-cover bg-center h-[20rem]">
+        <div class="absolute bottom-0 bg-[#333333] bg-opacity-[80%] w-[100%] h-32 px-3 pt-3 lg:top-[50%] lg:left-6 lg:w-auto lg:bg-opacity-[90%]">
+           <p class=" text-white text-xl font-bold">Get to know the U.Porto Strategic Plan 2030!</p>
+           <div class="inline-block bg-[#a18a4d] px-2 py-1 mt-2 font-bold text-[#333333]">See more</div> 
+        </div>
+    </div>
+    <div class="space-y-4 px-2 mt-10">
+        <h1 class="text-[#a18a4d] font-serif text-3xl">Study</h1>
+        <h2 class="font-bold text-2xl">Your future is here!</h2>
+        <p class="font-serif text-sm">
+            Gathering the most complete  offer of training 
+            programmes in Portugal, the 14 faculties of the
+            U.Porto offer unique conditions to those who
+            want to build an academic path of excellence and
+            properly valued by the labour market.
+        </p>
+    </div>
+    <div class="px-2 mt-10 py-5">
+        <form class="space-y-4">
+            <div class="text-2xl font-bold">Which course are you looking for?</div>
+            
+            <select id="options" name="options" class="w-[100%] h-12 block px-4 py-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500">
+                <option value="" disabled selected>All</option>
+                <option value="profile">Bachelor's and Integrated Master's Degree</option>
+                <option value="settings">Master's Degree</option>
+                <option value="logout">Doctorate</option>
+            </select>
+            
+            <input type="search" placeholder="Please enter course keywords..." class="border border-black w-[100%] h-12">
+
+            <div class=" flex items-center justify-center bg-[#a18a4d] h-12 text-white text-center">
+                Search
+            </div>
+        </form>
+    </div>
+</body>
+</html>
