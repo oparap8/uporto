@@ -714,6 +714,10 @@ video {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .items-center {
   align-items: center;
 }
@@ -722,12 +726,20 @@ video {
   justify-content: flex-start;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-2 {
@@ -808,6 +820,10 @@ video {
   background-position: center;
 }
 
+.fill-white {
+  fill: #fff;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -865,6 +881,10 @@ video {
   text-align: center;
 }
 
+.text-end {
+  text-align: end;
+}
+
 .font-serif {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -887,6 +907,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -996,6 +1021,10 @@ video {
   }
 }
 
+.\[\&\>\*\]\:text-center>* {
+  text-align: center;
+}
+
 .\[\&\>\*\]\:text-xl>* {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -1016,6 +1045,11 @@ video {
 
 .\[\&\>\*\]\:font-semibold>* {
   font-weight: 600;
+}
+
+.\[\&\>\*\]\:text-white>* {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .\[\&\>\*\]\:underline>* {
